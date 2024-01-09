@@ -2,11 +2,10 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   background-color: #fafafb;
-  font-size: medium; /* Adjust as needed */
-  font-weight: medium; /* Adjust as needed */
+  font-size: medium;
+  font-weight: medium;
 }
 
-/* Apply to all text elements */
 h1,
 h2,
 h3,
@@ -19,14 +18,14 @@ span,
 option,
 button,
 input {
-  font-size: medium; /* Adjust as needed */
-  font-weight: medium; /* Adjust as needed */
+  font-size: medium;
+  font-weight: medium;
 }
 
 h2 span {
-  font-weight: inherit; /* Reset font weight for spans within h2 */
+  font-weight: inherit;
 }
-.head{
+.head {
   font-weight: medium;
 }
 
@@ -40,7 +39,6 @@ h2 span {
   gap: 10px;
 }
 .import-heading {
-  /* border: 1px solid red; */
   margin-bottom: 20px;
 }
 
@@ -75,7 +73,6 @@ h2 span {
 
 .step-card {
   flex: 1;
-  
   background-color: #ffffff;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -87,41 +84,10 @@ h2 span {
 
 .step-content {
   padding-left: 7.5em;
-  /* border: 1px solid red; */
 }
 
 .step3 .step-content {
   width: 35em;
-}
-
-step-content-2 #fileType {
-  padding-left: 20px;
-  /* color: red; */
-}
-
-
-.step3 {
-  flex-basis: 100%; /* Full width for step 3 in the lower row */
-}
-
-.buttons {
-  margin-top: 10px;
-}
-
-/* Add any additional styling or adjustments as needed */
-/* Existing styles */
-
-.select-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.select-label {
-  text-align: center;
-  flex: 0 0 30%; /* Adjust width as needed */
-  margin: 10px;
 }
 
 #nextButton {
@@ -129,22 +95,21 @@ step-content-2 #fileType {
   background-color: green;
 }
 
- #cancelButton {
+#cancelButton {
   border: none;
   background-color: white;
   color: red;
- }
+}
 
-#nextButton, #cancelButton {
+#nextButton,
+#cancelButton {
   float: right;
-  /* margin: 0px 10px; */
   padding: 8px 15px;
   letter-spacing: 0.1em;
 }
 
 .control-btn {
   height: 37px;
-  /* border: 1px solid red; */
 }
 
 #availableFields,
@@ -152,5 +117,3 @@ step-content-2 #fileType {
   width: 100%;
   margin-top: 5px;
 }
-
-/* Rest of your CSS styles */

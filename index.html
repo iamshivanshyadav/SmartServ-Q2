@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Import Products</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="import-heading">
+        <h1>Import Products</h1>
+      </div>
+
+      <div class="steps-container">
+        <div class="steps-row">
+          <div class="step-card">
+            <h2>Step 1: Select File</h2>
+            <!-- Step 1 content -->
+            <input type="file" id="fileInput" accept=".csv, .json" />
+          </div>
+          <div class="step-card">
+            <h2>Step 2: Specify Format</h2>
+            <!-- Step 2 content -->
+            <label for="fileType">File Type:</label>
+            <select id="fileType">
+              <option value="csv">CSV</option>
+              <option value="json">JSON</option></select
+            ><br /><br />
+            <label for="encoding">Character Encoding:</label>
+            <select id="encoding">
+              <option value="UTF-8">UTF-8</option>
+              <option value="UTF-16BE">UTF-16BE</option>
+              <option value="UTF-32BE">UTF-32BE</option>
+              <option value="UTF-16LE">UTF-16LE</option>
+              <option value="UTF-32LE">UTF-32LE</option></select
+            ><br /><br />
+            <label for="delimiter">Delimiter:</label>
+            <select id="delimiter">
+              <option value="comma">Comma</option>
+              <option value="tab">Tab</option>
+              <option value="colon">Colon</option></select
+            ><br /><br />
+            <label for="hasHeader">Has Header:</label>
+            <input type="checkbox" id="hasHeader" /><br /><br />
+          </div>
+        </div>
+
+        <div class="steps-row">
+          <div class="step-card step3">
+  <h2>Step 3: Display Handling</h2>
+  <div class="select-container">
+    <div class="select-label">
+      <label for="availableFields">Available Fields</label>
+      <select id="availableFields" multiple>
+        <option value="ProductId">Product Id</option>
+<option value="Subcategory">Subcategory</option>
+<option value="Title">Title</option>
+<option value="Price">Price</option>
+<option value="Popularity">Popularity</option>
+<option value="Rating">Rating</option>
+<option value="Description">Description</option>
+<option value="UTM source">UTM source</option>
+<option value="UTM medium">UTM medium</option>
+      </select>
+    </div>
+    <div class="buttons">
+      <button id="addButton">>></button>
+      <button id="removeButton"><<</button>
+    </div>
+    <div class="select-label">
+      <label for="displayFields">Fields to be Displayed</label>
+      <select id="displayFields" multiple>
+        <!-- Options for fields to be displayed -->
+      </select>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+     <button id="nextButton">Next</button>
+    <button id="cancelButton">Cancel</button>
+      <!-- Submit button -->
+
+      <div id="displayTable"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

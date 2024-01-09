@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     formData.append('delimiter', delimiter);
     formData.append('hasHeader', hasHeader);
 
-    fetch('http://localhost:3000/upload', {
+    fetch('https://tets-sx01.onrender.com/upload', {
       method: 'POST',
       body: formData
     })
